@@ -1,0 +1,48 @@
+\section{引言}
+	秩序是社会生活的根本问题，它是社会生活得以可能的深刻根据，与一般社会理论有着深刻的关联，构成一般社会理论或社会哲学的核心主题。\par
+	参考文献引用示例\upcite{1,3}。
+\section{关于创新的思考}
+	\subsection{秩序问题的创新}
+	\subsubsection{……}
+\section{社会哲学的主题}
+	\subsection{示例}
+	插图示例：测试图例如图\ref{test-pic}所示,建议使用以htbp为顺序的浮动格式，减少文中“上图”、“下图”之类的描述，转而使用“图X”的描述方式，如必须如前者描述，请仅使用h控制图片浮动。请将文件放置在data/img/文件夹中，图片目录已自动索引，此处不建议也请勿省略后缀名。
+	\begin{figure}[htbp]
+		\centering
+		\includegraphics[width=0.5\textwidth]{test.png}
+		\caption{示例图片\label{test-pic}}
+	\end{figure}
+	\par
+	表格插入示例：测试表格如表\ref{test-table}所示，此处建议使用三线表格，更加复杂的表格（如自动伸缩表格）请使用tabularx或tabu环境，相关宏包已引入。
+	\begin{table}[htbp]
+		\centering
+		\begin{tabular}{ccccc}
+			\toprule
+			\multirow{2}*{姓名}&\multicolumn{2}{c}{森林}&\multicolumn{2}{c}{房屋}\\
+			\cmidrule{2-5}
+			&熊大&熊二&光头强&肥波\\
+			\midrule
+			成绩&97&98&99&70\\
+			\bottomrule
+		\end{tabular}
+		\caption{测试表格\label{test-table}}
+	\end{table}
+	\par
+	定理环境示例：定理\ref{bear-thm}是熊出没定理。
+	\begin{theorem}[熊出没定理]\label{bear-thm}
+		熊大和熊二以及光头强是好朋友。
+	\end{theorem}
+	定义环境示例：定义\ref{bear-def}是Bear定义。
+	\begin{definition}[Bear定义]\label{bear-def}
+		将熊二的弟弟定义为熊三。
+	\end{definition}
+	证明环境示例：
+	\begin{proof}[定理\ref{bear-thm}的证明]
+		这里是证明环境。
+	\end{proof}
+	公式环境示例：公式\ref{mass-energy equation}为爱因斯坦质能方程。
+	\begin{equation}\label{mass-energy equation}
+		E=mc^{2}
+	\end{equation}
+	质能方程$E=mc^{2}$，$E$表示能量，$m$代表质量，而$c$则表示光速（常量，$c=299792.458km/s$）。由阿尔伯特·爱因斯坦提出。$$E=mc^{2}$$该方程主要用来解释核变反应中的质量亏损和计算高能物理中粒子的能量。这也导致了德布罗意波和波动力学的诞生。
+	
