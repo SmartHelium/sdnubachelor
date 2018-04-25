@@ -101,6 +101,31 @@
 \RequirePackage{multirow}
 \RequirePackage{amsmath}
 \RequirePackage{listings}
+%\usepackage{xcolor}
+%\lstset{
+%	numbers=left, 
+%	numberstyle= \tiny, 
+%	keywordstyle= \color{ blue!70},
+%	commentstyle= \color{red!50!green!50!blue!50}, 
+%	frame=shadowbox, 
+%	rulesepcolor= \color{ red!20!green!20!blue!20} ,
+%	escapeinside=``,
+%	xleftmargin=2em,xrightmargin=0.5em, aboveskip=0.5em,
+%	framexleftmargin=1.5em
+%} 
+\lstset{
+	language=C,
+	basicstyle=\small\ttfamily,
+	numbers=left,
+	numbersep=5pt,
+	xleftmargin=20pt,
+	frame=tb,
+	framexleftmargin=20pt
+}
+\renewcommand\lstlistingname{代码}
+\renewcommand*\thelstnumber{\arabic{lstnumber}:}
+\DeclareCaptionFormat{mylst}{\hrule#1#2#3}
+\captionsetup[lstlisting]{format=mylst,labelfont=bf,singlelinecheck=off,labelsep=space}
 
 \DeclareRobustCommand{\sdnutitlechs}{}
 \DeclareRobustCommand{\sdnutitleen}{}
