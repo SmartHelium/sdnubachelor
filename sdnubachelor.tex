@@ -18,19 +18,15 @@
 		\setlength{\nlength}{7.8cm}	%封面题目线长度，根据题目长短自行调整，默认7.8cm
 		\include{data/resource/cover}
 	}
-	
-%---封面表格部分，注释\include{data/resource/covertable}一行可以不编译封面表格---------------
-	{
-		\sdnupaperinfo{2017.10.25}{2018.02.25} %表头时间
-		\sdnutabledate{\qquad}{\qquad}{\qquad} %表尾时间,不填写请用\qquad填充
-		\sdnupaperov{
-			\qquad 在此键入论文题目的来源、理论和实践意义，由于tabu环境请使用双反斜换行，使用qquad进行段首缩进，qquad后不要忘记空格与中文字符间开，请适当调整内容量保证表格排版美观。\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
-		}{
-			\qquad 在此键入论文的主要内容及创新点，由于tabu环境请使用双反斜换行，使用qquad进行段首缩进，qquad后不要忘记空格与中文字符间开，请适当调整内容量保证表格排版美观。\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
-		}
-		\include{data/resource/covertable}
-	}
-	
+
+%---论文内容摘要信息页，注释\include{data/resource/endtable4}可不编译此页--------------------
+{
+	\resdnuinfo{\sdnucollegechs}{\sdnumajorchs}{\sdnuclasschs} %学院、专业、班级信息重述，如不符合排版要求，可在此进行简称替换
+	\newcommand{\etkwzihao}{\zihao{-4}}	%表格中关键词字号自定义，防止关键词过多造成的排版混乱
+	\cabst{这里是摘要内容，由于tabu环境请使用双反斜换行，使用qquad进行段首缩进，qquad后不要忘记空格与中文字符间开，请适当调整内容量保证表格排版美观。 \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\}{\qquad}{\qquad}{\qquad}{\qquad} %依次填入：内容摘要、成绩、年、月、日，不填写请用\qquad代替
+	\include{data/resource/endtable4}
+}
+
 %---目录生成部分，此部分无需在意------------------------------------------------------------
 	{
 		\begin{titlepage}
@@ -82,11 +78,16 @@
 		\include{data/resource/endtable3}
 	}
 
-%---论文内容摘要信息页，注释\include{data/resource/endtable4}可不编译此页--------------------
-	{
-		\resdnuinfo{\sdnucollegechs}{\sdnumajorchs}{\sdnuclasschs} %学院、专业、班级信息重述，如不符合排版要求，可在此进行简称替换
-		\newcommand{\etkwzihao}{\zihao{-4}}	%表格中关键词字号自定义，防止关键词过多造成的排版混乱
-		\cabst{这里是摘要内容，由于tabu环境请使用双反斜换行，使用qquad进行段首缩进，qquad后不要忘记空格与中文字符间开，请适当调整内容量保证表格排版美观。 \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\}{\qquad}{\qquad}{\qquad}{\qquad} %依次填入：内容摘要、成绩、年、月、日，不填写请用\qquad代替
-		\include{data/resource/endtable4}
+%---原封面表格部分，注释\include{data/resource/covertable}一行可以不编译封面表格---------------
+{
+	\sdnupaperinfo{2017.10.25}{2018.02.25} %表头时间
+	\sdnutabledate{\qquad}{\qquad}{\qquad} %表尾时间,不填写请用\qquad填充
+	\sdnupaperov{
+		\qquad 在此键入论文题目的来源、理论和实践意义，由于tabu环境请使用双反斜换行，使用qquad进行段首缩进，qquad后不要忘记空格与中文字符间开，请适当调整内容量保证表格排版美观。\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
+	}{
+		\qquad 在此键入论文的主要内容及创新点，由于tabu环境请使用双反斜换行，使用qquad进行段首缩进，qquad后不要忘记空格与中文字符间开，请适当调整内容量保证表格排版美观。\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\
 	}
+	\include{data/resource/covertable}
+}
+
 \end{document}

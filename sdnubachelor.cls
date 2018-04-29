@@ -17,7 +17,7 @@
 
 \LoadClassWithOptions{ctexart}
 
-\RequirePackage[a4paper,top=2.54cm,bottom=2.54cm,left=3.17cm,right=3.17cm]{geometry}
+\RequirePackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.75cm,right=2.5cm]{geometry}
 \pagestyle{plain}
 
 \RequirePackage{tabu}
